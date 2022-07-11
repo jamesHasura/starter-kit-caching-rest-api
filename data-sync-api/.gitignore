@@ -1,2 +1,4 @@
 node_modules
 *.swo, *.swp
+.prettierrc.json
+.prettierignore
