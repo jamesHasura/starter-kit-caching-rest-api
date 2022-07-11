@@ -1,0 +1,14 @@
+table:
+  schema: public
+  name: business_object_events
+event_triggers:
+  - name: bo-event-handler
+    definition:
+      enable_manual: true
+      insert:
+        columns: '*'
+    retry_conf:
+      num_retries: 0
+      interval_sec: 10
+      timeout_sec: 60
+    webhook_from_env: EVENT_DISPATCHER_LAMBDA_URL
