@@ -8,11 +8,11 @@ import { businessObjectProviderMap } from "./synchronizers/index"
 
 dotenv.config()
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
+//process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
 const PORT = process.env.PORT || 3000
 
 // ENV variable configuration check
-assert(process.env.HASURA_GRAPHQL_API, "HASURA_GRAPHQL_API is not set")
+//assert(process.env.HASURA_GRAPHQL_API, "HASURA_GRAPHQL_API is not set")
 
 if (!process.env.HASURA_GRAPHQL_ADMIN_SECRET) {
     console.warn("HASURA_GRAPHQL_ADMIN_SECRET is not set")

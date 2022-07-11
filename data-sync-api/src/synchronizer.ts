@@ -9,7 +9,7 @@ const dispatch = async function (
         case "delete": {
             console.log("Deleting", payload.name, payload.object_id)
             const result = await runQuery(provider.deleteById, {
-                id: payload.event_id,
+                event_id: payload.event_id,
                 object_id: payload.object_id,
             })
             console.log("deleted result", result)
